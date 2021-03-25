@@ -1,0 +1,75 @@
+/* Andranno inserite tutte le regole CSS per la pagina */
+
+/* 
+elemento{
+    regola
+} 
+*/
+
+/* Selettore di raggruppamento */
+h1{
+    color:red;
+    text-align: center;
+}
+
+p{
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+body{
+    background-color: coral;
+}
+
+/* Selettori per ID (id univoco per gli elementi)*/
+#elencoAlunni{
+    font-size: 22px;
+    color: white;
+}
+
+
+/* Selettore per Classi - Posso avere più
+ classi nella mia pagina HTML */
+
+.font30{
+    font-size:  30px;
+}
+
+.misureDiv{
+    width: 320px;
+    height: 320px;
+    background-color: green;
+    border: 5px solid black;
+    float: left;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    height: 320px;
+    background-color:rgb(13, 136, 167);
+    /* display: none; fa sparire l'elemento */
+
+}
+
+.mT20{
+    margin-top: 20px;
+}
+
+.pT50{
+    padding-top: 50px;
+}
+
+.bB5{
+    border: 5px dotted black;
+}
+
+li{
+    display: inline;
+}
+
