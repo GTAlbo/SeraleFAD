@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script type="text/javascript">
+    //CINETECA
+    var film = [
+        "Alien",
+        "Serpico",
+        "Black Panther",
+        "Il Grande Lebowski",
+        "Pulp Fiction",
+        "Titanic"
+    ];
+
+    //ordino gli elementi
+    film.sort();
+
+    console.log(film);
+
+    document.write("<h1>Cineteca TSSPHP-2021 </h1>");
+
+    // document.write(film[0] + "<br>");
+    // document.write(film[1] + "<br>");
+    // document.write(film[2] + "<br>");
+    // document.write(film[3] + "<br>");
+    // document.write(film[4] + "<br>");
+
+    //CICLO FOR-IN serve per scalare oggetti di tipo Iterable
+    for(var indice in film){
+        document.write("Film numero: " + indice + " " + film[indice] + "<br>");
+    }
+
+    //Ciclo For
+    for(var i = 0; i < film.length; i++){
+        document.write(film[i] + "<br>");
+    }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+    //Dichiaro un array 
+    var colori = ['bianco', 'rosso', 'giallo'];
+
+    console.log(colori);
+
+    console.log("Primo colore: " + colori[0]);
+    console.log("Secondo colore: " + colori[1]);
+    console.log("Terzo colore: " + colori[2]);
+    
+    //Aggiungiamo un elemento
+    colori.push('verde');
+
+    console.log(colori);
+
+    document.write(colori);
+
+    //ordino gli elementi in ordine alfabetico
+    colori.sort();
+    console.log(colori);
+
+    //inverto l'ordine
+    colori.reverse();
+    console.log(colori);
+
+    //elimino un elemento
+    colori.pop();
+    console.log(colori);
+
+    //Esiste un altro modo di dichiare gli array
+    var frutta = new Array();
+    
+    frutta[0] = "Mela";
+    frutta[1] = "Arancia";
+    frutta[3] = "Banana";
+
+    console.log(frutta);
+    
+
+    //Gli array hanno sempre oggetti simili tra loro
+
+    var cose = [1, "Ciao", false, "Dario"]; //Non si fa
+    console.log(cose);
+
+
+    </script>
+</body>
+</html>

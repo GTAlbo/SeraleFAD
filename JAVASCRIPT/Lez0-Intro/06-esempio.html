@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista della spesa</h1>   
+
+    <ul id="miaLista">
+
+    </ul>
+
+    <div id="demo"></div>
+
+    <script type="text/javascript">
+    var miaLista = document.getElementById('miaLista');
+    var demo = document.getElementById('demo');
+
+    var lista = ['Latte', 'Biscotti', 'Acqua', 'Caffè', 'Pasta'];
+    var prezzi = [1, 2.3, 1.8, 3.6, 0.75];
+    
+    //var di supporto
+    var spesa = '';
+    var totale = 0;
+
+    for(var i in lista){
+        // miaLista.innerHTML += "<li>" + lista[i] + " " + prezzi[i] + " €" + "</li>";
+        spesa += "<li>" + lista[i]+ " " + prezzi[i] + " €" + "</li>";
+        totale += prezzi[i];
+    }    
+
+    demo.innerHTML = "<h4> Totale: " + totale + " €";
+    miaLista.innerHTML = spesa;
+
+    
+    // for(var i = 0; i < lista.length; i++){
+    //     miaLista.innerHTML = "<li>" + lista[i] + "</li>";
+    // }
+
+    //nel div "demo" calcola il totale della spesa e inseriscilo in un h4
+
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>E-Shop di materiale edile - carrello</h1>
+
+    <div id="saluti">Puffaffero</div>
+    
+    <p id="marca"> 1 sola marca </p>
+    <p id="numArt">Quanti articoli sto acquistando</p>
+    <p id="subTot"> Quanto costano tutti gli articoli  </p>
+    <p id="sped">Costo sped</p>
+
+    <p id="recap">Riepilogo di tutti gli articoli </p>
+
+    <h4 id="totale">costo sped + tot art</h4>
+
+    <script type="text/javascript">
+    var saluti = document.getElementById('saluti');
+    var marca = document.getElementById('marca');   //CTRL + d per selezionare il pattern successivo
+    var numArt = document.getElementById('numArt');
+    var subTot = document.getElementById('subTot');
+    var sped = document.getElementById('sped');
+    var recap = document.getElementById('recap');
+    var totale = document.getElementById('totale');
+
+    var utente = prompt("Ciao Utente, inserisci il tuo nome");
+    saluti.innerHTML = "<h2>Ciao " +  utente +"</h2>";
+
+    var nomeAzienda = "JIMMY CEMENTO";
+    marca.innerHTML = nomeAzienda;
+
+    var articoli = ['Rullo', 'Bedoniera', 'Cazzuola', 'Cemento 1sc', 'Martello', 'Secchio'];
+    var prezzoArt = [10, 290.99, 4.50, 22, 17, 2.5];
+
+    numArt.innerHTML = "Num articoli nel carrello: " + articoli.length;
+
+    var sub = 0;
+    var lista = '';
+
+    for(var i in articoli){
+        lista += "<li> " + articoli[i] + " - " + "prezzo: " + prezzoArt[i] + " €";
+        sub += prezzoArt[i];
+    }
+
+    subTot.innerHTML = "<strong> Sub-totale: " + sub + "</strong>";
+    recap.innerHTML = lista;
+
+    var spedCosto = 9.6;
+
+    var totCosto = spedCosto + sub;
+
+    sped.innerHTML = "Costo spedizione: " + spedCosto + " €";
+    totale.innerHTML ="Totale: " + totCosto.toFixed(2) + " €";
+
+    </script>
+</body>
+</html>

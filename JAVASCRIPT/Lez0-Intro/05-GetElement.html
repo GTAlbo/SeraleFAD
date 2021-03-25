@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- L'attributo ID deve essere UNICO nella pagina -->
+    
+    <h1 id="titolo"></h1> 
+
+    <p id="parag"></p>
+
+    <div id="demo"></div>
+    
+
+    <script type="text/javascript">
+
+    // document.write() da Abbandonare
+
+    //RECUPERO UN ELEMENTO HTML e lo registro in una var
+    var titolo = document.getElementById("titolo");
+    console.log(titolo);
+
+    //Per scrivere utilizzo la prop .innerHTML
+    titolo.innerHTML = "Benvenuto sulla pagina";
+
+    //Prendo il paragrafo p 
+    var parag = document.getElementById('parag');
+    //scrivo nel parag
+    parag.innerHTML = "Lorem ipsum ecc ecc ecc";
+
+    //Prendo il div demo 
+    var demo = document.getElementById('demo');
+
+    //inietto del HTML
+    demo.innerHTML = "<ul><li>Pippo</li><li>Paperino</li></ul>";
+
+
+
+
+    
+    </script>
+
+</body>
+</html>
